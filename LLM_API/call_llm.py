@@ -9,7 +9,8 @@ def call(text):
      
     default_prompt='''Just give the sql code as response, 
     nothing else not even a single extra word or sign. 
-    with the proper syntax error free query, so i can directly pass your entire response as a query.
+    with the proper syntax error free query, so i can directly pass your entire response as a query
+    and one more thing add space after and before every table and column name in query. 
     description : '''
 
     #call api with final prompt

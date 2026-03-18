@@ -1,8 +1,4 @@
-
-
 dummy_tables=['ab','cd','xy','zh']
-
-
 
 def replace_substring(text, old, new):
     arr=text.split(" ")
