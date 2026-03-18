@@ -1,1 +1,1 @@
-Database chatting
+Database Chat
