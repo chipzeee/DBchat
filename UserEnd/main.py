@@ -4,6 +4,7 @@ sys.path.insert(0, '/project/DBchat')
 
 from encryption import encrypt
 from LLM_API.call_llm import call
+from query_exec import execute 
 
 def run():
     query=input("Enter the query : ").strip()
@@ -23,10 +24,12 @@ def run():
             query[index]=maped[i]
         index+=1
     query=" ".join(query)
-    return query
+    result=execute(query)
+    print(result)
+
 
 if __name__=='__main__':
-    print("Final Query: ",run())
+    run()
 
 
 
