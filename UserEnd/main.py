@@ -12,11 +12,11 @@ def run():
     prompt,maped=encrypt(prompt=query,tables=tables)
 
     query=call(prompt)
-    print("llm response : ",query)
+    #print("llm response : ",query)
     query=query.split(" ")
 
-    print(maped)
-    print(query)
+    #print(maped)
+    #print(query)
     index=0
     for i in query:
         if i in maped:
